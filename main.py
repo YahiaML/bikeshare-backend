@@ -24,7 +24,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # We will restrict this to Lovable's URL after deployment
+    allow_origins=["https://bike-share.lovable.app"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
